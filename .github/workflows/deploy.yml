@@ -29,7 +29,7 @@ jobs:
 
       - name: Build, tag, and push image to Amazon ECR
         env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REGISTRY: public.ecr.aws/a2e6m3i0
           ECR_REPOSITORY: gogo-bot-prod
           IMAGE_TAG: ${{ github.sha }}
         run: |
